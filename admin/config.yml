@@ -1,0 +1,14 @@
+backend:
+  name: git-gateway
+  branch: main
+media_folder: "images"
+public_folder: "/images"
+collections:
+  - name: "produk"
+    label: "Produk"
+    folder: "produk"
+    create: true
+    fields:
+      - {label: "Judul Produk", name: "title", widget: "string"}
+      - {label: "Gambar Produk", name: "image", widget: "image"}
+      - {label: "Deskripsi", name: "body", widget: "markdown"}
